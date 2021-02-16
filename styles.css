@@ -12,30 +12,32 @@ a {
   color: #8d8d8d;
   text-decoration: none;
 }
-/* HEADER */
-.brand-name {
-  float: left;
-  padding: 15px;
-  margin: 0;
-  font-size: 1.2rem;
-  font-weight: 700;
+
+@media (min-width: 1500px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1400px;
 }
-.tabs {
-  float: right;
-  padding: 15px;
 }
 .container {
   width: 1400px;
   margin: auto;
   position: relative;
 }
-.header {
-  height: 50px;
-  background-color: #f7f1eb;
+
+
+/* HEADER */
+.navbar{
+  
+  background-color: #f7f1eb!important;
+  z-index: 1;
 }
-.header-tag {
-  margin-left: 15px;
+.navbar-light .navbar-brand {
+  color: #8d8d8d;
 }
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: #8d8d8d;
+}
+
 
 /* Landing Page */
 .landing {
@@ -45,15 +47,15 @@ a {
 .bg-landing {
   background-color: #f7f1eb;
   position: absolute;
-  height: 480px;
+  height: 530px;
   width: 100%;
-  right: 0;
+  top: 0;
 }
 .landing-img {
   height: 550px;
   position: absolute;
   margin-top: 30px;
-  margin-left: 15px;
+  margin-left: 30px;
   left: 0;
   z-index: 1;
 }
@@ -110,29 +112,29 @@ a {
 
 /* INSTAGRAM */
 .insta-hr {
-  width: 500px;
+  width: 100%;
   display: inline-block;
   border-top: 2px solid #d3bfa6;
+  margin-right: 10px;
 }
 .insta-text {
   display: inline-block;
   color: #d3bfa6;
 }
 .insta-title {
-  position: absolute;
-  right: 0;
+  margin-left: 100px;
+  display: flex;
   align-items: center;
-  /* width: 100%; */
+  text-align: center;
+  margin: auto;
 }
-.insta {
-  margin-bottom: 100px;
-}
+
 .insta-card {
   height: 450px;
   width: 350px;
   background-color: #d3bfa6;
   display: inline-block;
-  margin-top: 70px;
+  margin-top: 30px;
   text-align: center;
 }
 .img-container {
@@ -151,7 +153,7 @@ a {
 }
 .insta-lay {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .insta-btn {
@@ -170,25 +172,398 @@ a {
 
 .followers {
   text-align: center;
-  margin-top: 50px;
-  position: relative;
+  margin: 50px auto;
 }
 .insta-live {
   display: inline-block;
-  font-size: 32px;
-  width: 200px;
-  margin: 0;
-  /* padding: 1px; */
-  border: 1px solid #d3bfa6;
-  text-align: center;
+  font-size: 24px;
+  border: 1px solid #030201;
+  padding: 20px;
 }
 
 .join {
   display: inline-block;
-  font-size: 32px;
-  padding: 10px;
+  font-size: 24px;
   background-color: #d3bfa6;
+  padding: 21px;
+}
+.content-container {
+  width: 1200px;
+}
+
+/* FREEBIES */
+.free {
+  margin: 170px auto;
+  text-align: center;
+}
+.free-bg {
+  width: 100%;
+  height: 300px;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  background-color: #d3bfa6;
+  margin: 70px 0;
+}
+.email {
+  display: inline-block;
+  height: 50px;
+  width: 500px;
+  border: 1px solid #8d8d8d;
+  padding-left: 10px;
+  /* text-align: center; */
+  font-size: 15px
+}
+
+.free-btn {
+  display: inline-block;
+  height: 54px;
+  width: 70px;
+  color: #8d8d8d;
+  background-color: #f7f1eb;
+  border: 1px solid #8d8d8d;
+  font-family: "Lora", serif;
+ cursor: pointer;
+}
+
+.email::placeholder {
+  color: #bebebe;
+  font-weight: 100;
+}
+.free-title{
+  margin-bottom: 0;
+}
+.free-p{
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+/* FOOTER NAVIGATION */
+.nav-bg{
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  background-color: #f7f1eb;
+}
+.navigation{
+  display: inline-block;
+  width: 146x;
+  margin-right: 200px;
+  text-align: center;
+}
+.socials{
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+}
+.nav-footer{
+  margin-bottom: 90px;
+  text-align: center;
+}
+.nav-align{
+  margin-right: 20px;
+}
+.nav-tag{
+  margin-right: 10px;
+  
+}
+ .nav-text{
+  display: inline-block;
+  text-align: left;
+  
+  line-height: 2;
+ 
+}
+
+/* FOOTER */
+.footer{
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+
+/* MOBILE VERSION */
+@media only screen and (max-width: 600px){
+  
+  /* HEADER */
+  .brand-name {
+    float: left;
+    padding: 15px;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .tabs {
+    float: right;
+    padding: 15px;
+  }
+  .container {
+    width: 1400px;
+    margin: auto;
+    position: relative;
+  }
+  .header {
+    height: 50px;
+    background-color: #f7f1eb;
+  }
+  .header-tag {
+    margin-left: 15px;
+  }
+  
+  /* Landing Page */
+  .landing {
+    height: 650px;
+  }
+  
+  .bg-landing {
+    background-color: #f7f1eb;
+    position: absolute;
+    height: 480px;
+    width: 100%;
+    right: 0;
+  }
+  .landing-img {
+    height: 550px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 15px;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .landing-text {
+    height: 400px;
+    width: 700px;
+    position: absolute;
+    background-color: #f7f1eb;
+    text-align: center;
+    right: 0;
+  }
+  
+  .landing-title {
+    font-family: "Pacifico", cursive;
+    font-weight: 200;
+    font-size: 52px;
+    margin: 100px 60px 60px;
+  }
+  
+  .landing-btn {
+    border: 1px solid #d3bfa6;
+    padding: 10px 20px;
+    font-size: 24px;
+  }
+  
+  /* ABOUT ME */
+  
+  .about-me {
+    margin: 59px auto;
+    height: 350px;
+    width: 1000px;
+    background-color: #f7f1eb;
+    text-align: center;
+    padding: 10px;
+  }
+  .about-text {
+    margin: 50px;
+    font-size: 26px;
+  }
+  
+  .about-hr {
+    width: 100px;
+  }
+  
+  .about-border {
+    border: 4px solid #f7f1eb;
+    width: 1200px;
+    height: 480px;
+    margin: auto;
+    margin-bottom: 100px;
+    justify-content: center;
+  }
+  
+  /* INSTAGRAM */
+  .insta-hr {
+    width: 100%;
+    display: inline-block;
+    border-top: 2px solid #d3bfa6;
+    margin-right: 10px;
+  }
+  .insta-text {
+    display: inline-block;
+    color: #d3bfa6;
+  }
+  .insta-title {
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .insta-card {
+    height: 450px;
+    width: 350px;
+    background-color: #d3bfa6;
+    display: inline-block;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .img-container {
+    margin: 25px auto;
+    height: 350px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .post {
+    width: 350px;
+    margin: auto;
+    display: block;
+  }
+  .insta-lay {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .insta-btn {
+    background-color: #f7f1eb;
+    padding: 10px 40px;
+    margin-bottom: 25px;
+  }
+  
+  .followers-bg {
+    background-color: #f7f1eb;
+    position: absolute;
+    height: 450px;
+    width: 100%;
+    margin-top: 300px;
+  }
+  
+  .followers {
+    text-align: center;
+    margin: 50px auto;
+  }
+  .insta-live {
+    display: inline-block;
+    font-size: 24px;
+    border: 1px solid #030201;
+    padding: 20px;
+  }
+  
+  .join {
+    display: inline-block;
+    font-size: 24px;
+    background-color: #d3bfa6;
+    padding: 21px;
+  }
+  .content-container {
+    width: 1200px;
+  }
+  
+  /* FREEBIES */
+  .free {
+    margin: 170px auto;
+    text-align: center;
+  }
+  .free-bg {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    background-color: #d3bfa6;
+    margin: 70px 0;
+  }
+  .email {
+    display: inline-block;
+    height: 50px;
+    width: 500px;
+    border: 1px solid #8d8d8d;
+    padding-left: 10px;
+    /* text-align: center; */
+    font-size: 15px
+  }
+  
+  .free-btn {
+    display: inline-block;
+    height: 54px;
+    width: 70px;
+    color: #8d8d8d;
+    background-color: #f7f1eb;
+    border: 1px solid #8d8d8d;
+    font-family: "Lora", serif;
+   cursor: pointer;
+  }
+  
+  .email::placeholder {
+    color: #bebebe;
+    font-weight: 100;
+  }
+  .free-title{
+    margin-bottom: 0;
+  }
+  .free-p{
+    margin-top: 5px;
+    margin-bottom: 50px;
+  }
+  
+  /* FOOTER NAVIGATION */
+  .nav-bg{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    background-color: #f7f1eb;
+  }
+  .navigation{
+    display: inline-block;
+    width: 146x;
+    margin-right: 200px;
+    text-align: center;
+  }
+  .socials{
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+  }
+  .nav-footer{
+    margin-bottom: 90px;
+    text-align: center;
+  }
+  .nav-align{
+    margin-right: 20px;
+  }
+  .nav-tag{
+    margin-right: 10px;
+    
+  }
+   .nav-text{
+    display: inline-block;
+    text-align: left;
+    
+    line-height: 2;
+   
+  }
+  
+  /* FOOTER */
+  .footer{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 25px;
+  }
+  
 }

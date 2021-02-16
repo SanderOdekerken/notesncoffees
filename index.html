@@ -7,44 +7,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
     <title>NotesNCoffees</title>
 
-    <link rel="stylesheet" href="styles.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <!-- HEADER -->
-    <div class="header">
+    <!-- <div class="header" id="header">
         <div class="container">
-            <a href="#" class="brand-name">NotesNcoffees</a>
+            <a href="#header" class="brand-name">NotesNcoffees</a>
             <div class="tabs">
-                <a href="#" class="header-tag">Home</a>
-                <a href="#" class="header-tag">About</a>
+                <a href="#header" class="header-tag">Home</a>
+                <a href="#about" class="header-tag">About</a>
                 <a href="#" class="header-tag">Blog</a>
-                <a href="#" class="header-tag">Shop</a>
-                <a href="#" class="header-tag">Contact</a>
+                <a href="https://www.etsy.com/nl/shop/notesncoffees?ref=search_shop_redirect"
+                    class="header-tag">Shop</a>
+                <a href="#freebies" class="header-tag">Contact</a>
             </div>
         </div>
-    </div>
+    </div> -->
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">NotesNCoffees</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#header">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://www.etsy.com/nl/shop/notesncoffees?ref=search_shop_redirect">Shop <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#freebies">Contact <span class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+
+
+        </div>
+    </nav>
+</div>
+    
 
     <!-- Landing Page -->
     <div class="landing">
         <div class="bg-landing"></div>
-        <div class="container">
+        <div class=" container">
             <div class="img">
                 <img class="landing-img" src="images/Profile-Pic.jfif" alt="profile-img">
             </div>
             <div class="landing-text">
                 <h1 class="landing-title">Happiest when I'm journaling</h1>
-                <a class="landing-btn" href="#">Get to know me</a>
+                <a class="landing-btn" href="#about">Get to know me</a>
             </div>
         </div>
     </div>
 
     <!-- ABOUT ME -->
-    <div class="about-border">
+    <div class="about-border" id="about">
         <div class="about-me">
             <h1>About me</h1>
             <hr class="about-hr">
@@ -57,48 +95,109 @@
 
 
     <!-- INSTAGRAM -->
-    <div class="insta">
-        <div class="followers-bg"></div>
-        <div class="container">
-            <div class="insta-title">
-                <hr class="insta-hr">
-                <p class="insta-text">Instagram</p>
-            </div>
 
-            <div class="insta-lay">
+    <div class="followers-bg"></div>
+    <div class="content-container container">
+        <div class="insta-title">
+            <hr class="insta-hr">
+            <p class="insta-text">Instagram</p>
+        </div>
 
-                <div class="insta-card">
-                    <div class="img-container">
-                        <img class="post" src="images/Post 1.PNG" alt="instagram post">
-                    </div>
+        <div class="insta-lay">
 
-                    <a class="insta-btn"
-                        href="https://www.instagram.com/p/CLKNZfmLQPT/?utm_source=ig_web_copy_link">Show me</a>
+            <div class="insta-card">
+                <div class="img-container">
+                    <img class="post" src="images/Post 1.PNG" alt="instagram post">
                 </div>
-                <div class="insta-card">
-                    <div class="img-container">
-                        <img class="post" src="images/Post 2.PNG" alt="instagram post">
-                    </div>
 
-                    <a class="insta-btn"
-                        href="https://www.instagram.com/p/CLCfDsSrsn4/?utm_source=ig_web_copy_link">Show me</a>
+                <!-- <a class="insta-btn" href="https://www.instagram.com/p/CLKNZfmLQPT/?utm_source=ig_web_copy_link">Show
+                    me</a> -->
+            </div>
+            <div class="insta-card">
+                <div class="img-container">
+                    <img class="post" src="images/Post 2.PNG" alt="instagram post">
                 </div>
-                <div class="insta-card">
-                    <div class="img-container">
-                        <img class="post" src="images/Post 3.PNG" alt="instagram post">
-                    </div>
 
-                    <a class="insta-btn"
-                        href="https://www.instagram.com/p/CKwf3bbrPzr/?utm_source=ig_web_copy_link">Show me</a>
+                <!-- <a class="insta-btn" href="https://www.instagram.com/p/CLCfDsSrsn4/?utm_source=ig_web_copy_link">Show
+                    me</a> -->
+            </div>
+            <div class="insta-card">
+                <div class="img-container">
+                    <img class="post" src="images/Post 3.PNG" alt="instagram post">
                 </div>
+
+                <!-- <a class="insta-btn" href="https://www.instagram.com/p/CKwf3bbrPzr/?utm_source=ig_web_copy_link">Show
+                    me</a> -->
             </div>
-            <div class="followers">
-                <p class="insta-live">5534 followers</p>
-                <a class="join" href="https://www.instagram.com/notesncoffees/">Join the family</a>
+        </div>
+        <div class="followers">
+            <p class="insta-live">5534 followers</p>
+            <a class="join" href="https://www.instagram.com/notesncoffees/">Join the family</a>
+        </div>
+    </div>
+
+    <!-- FREEBIES -->
+
+    <div class="free-bg" id="freebies"></div>
+    <div class="container">
+        <div class="free">
+            <div class="free-text">
+                <h1 class="free-title">Freebies?</h1>
+                <p class="free-p">Get your own printables</p>
             </div>
+            <form action="">
+                <input class="email" type="email" id="email" placeholder="freebies@notesncoffees.com">
+                <button class="free-btn">Submit</button>
+            </form>
         </div>
 
     </div>
+
+
+    <!-- FOOTER NAVIGATION -->
+    <div class="nav-bg"></div>
+    <div class="container nav-footer">
+        <div class="navigation">
+            <h2>Navigation</h2>
+            <hr>
+            <div class="nav-text nav-align">
+                <a class="nav-tag" href="#header">Home</a><br>
+                <a href="#about">About</a><br>
+                <a class="nav-tag" href="#">Blog</a>
+            </div>
+            <div class="nav-text">
+
+                <a href="https://www.etsy.com/nl/shop/notesncoffees?ref=search_shop_redirect">Shop</a><br>
+                <a class="nav-tag" href="#freebies">Contact</a><br>
+                <a class="nav-tag" style="visibility: hidden;" href="#"></a>
+            </div>
+
+
+        </div>
+        <div class="socials">
+            <h2>Socials</h2>
+            <hr>
+            <div class="nav-text">
+                <a href="https://www.instagram.com/notesncoffees/">Instagram</a>
+                <a href="https://www.youtube.com/channel/UCH7Dhfy-fxFYnztS-9WEqpA">Youtube</a>
+                <a href="https://linktr.ee/Notesncoffees">LinkTree</a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <p class="footer">©2021 codebyso</p>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+
 </body>
 
 </html>
