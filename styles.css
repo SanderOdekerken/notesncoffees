@@ -1,8 +1,17 @@
+@font-face {
+  font-family: 'Right Here';
+  src: url('RightHere.otf')format('opentype'), url('RightHere.tff')format('truetype')
+}
 body {
   margin: 0;
   padding: 0;
   font-family: "Lora", serif;
   color: #8d8d8d;
+}
+h1 {
+  font-family: "Bodoni Moda", serif;
+ 
+  color: #2c2c2c;
 }
 hr {
   border: 0;
@@ -12,49 +21,63 @@ a {
   color: #8d8d8d;
   text-decoration: none;
 }
-
-@media (min-width: 1500px){
-  .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1400px;
-}
+a:hover {
+  color: #8d8d8d;
+  text-decoration: none;
 }
 .container {
-  width: 1400px;
   margin: auto;
   position: relative;
 }
 
+span {
+  font-style: italic;
+}
+
 
 /* HEADER */
-.navbar{
-  
-  background-color: #f7f1eb!important;
+.nav-hr {
+  border: 0;
+  border-top: 20px solid;
+  width: 1px;
+  margin: 10px;
+}
+.navbar {
+  background-color: white !important;
   z-index: 1;
 }
+.navbar-nav {
+  flex-direction: row;
+}
 .navbar-light .navbar-brand {
+  color: black;
+  font-family: "Bodoni Moda", serif;
+  font-style: italic;
+  margin: auto 20px;
+}
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
   color: #8d8d8d;
 }
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-  color: #8d8d8d;
-}
-
 
 /* Landing Page */
 .landing {
-  height: 650px;
+  height: 600px;
 }
 
 .bg-landing {
   background-color: #f7f1eb;
   position: absolute;
-  height: 530px;
+  height: 300px;
   width: 100%;
-  top: 0;
+  /* top: 0; */
 }
 .landing-img {
-  height: 550px;
+  height: 450px;
   position: absolute;
-  margin-top: 30px;
+  margin-top: 80px;
   margin-left: 30px;
   left: 0;
   z-index: 1;
@@ -62,39 +85,34 @@ a {
 
 .landing-text {
   height: 400px;
-  width: 700px;
+  width: 600px;
   position: absolute;
-  background-color: #f7f1eb;
   text-align: center;
   right: 0;
+  margin-top: 135px;
 }
 
 .landing-title {
-  font-family: "Pacifico", cursive;
-  font-weight: 200;
-  font-size: 52px;
+  font-size: 46px;
   margin: 100px 60px 60px;
 }
-
-.landing-btn {
-  border: 1px solid #d3bfa6;
-  padding: 10px 20px;
-  font-size: 24px;
+.journaling{
+  font-family: "Right Here", serif;
+  font-size: 65px;
 }
-
 /* ABOUT ME */
 
 .about-me {
-  margin: 59px auto;
-  height: 350px;
+  margin: 46px auto;
+  height: 300px;
   width: 1000px;
   background-color: #f7f1eb;
   text-align: center;
   padding: 10px;
 }
 .about-text {
-  margin: 50px;
-  font-size: 26px;
+  margin: 40px;
+  font-size: 20px;
 }
 
 .about-hr {
@@ -103,92 +121,69 @@ a {
 
 .about-border {
   border: 4px solid #f7f1eb;
-  width: 1200px;
-  height: 480px;
+  width: 1100px;
   margin: auto;
-  margin-bottom: 100px;
-  justify-content: center;
+
+  margin-bottom: 50px;
 }
 
 /* INSTAGRAM */
+.align-row {
+  text-align: center;
+  width: 1000px;
+  margin: auto;
+}
+.content-container {
+  width: 1200px;
+}
 .insta-hr {
   width: 100%;
   display: inline-block;
-  border-top: 2px solid #d3bfa6;
-  margin-right: 10px;
+  border-top: 30px solid #f7f1eb;
+  margin-right: 30px;
 }
 .insta-text {
   display: inline-block;
-  color: #d3bfa6;
+  color: black;
+  font-family: "Bodoni Moda", serif;
+  font-size: 30px;
+  margin: 0;
+  width: 165px;
 }
 .insta-title {
-  margin-left: 100px;
   display: flex;
   align-items: center;
-  text-align: center;
-  margin: auto;
+  margin: auto 70px;
 }
-
-.insta-card {
-  height: 450px;
-  width: 350px;
-  background-color: #d3bfa6;
-  display: inline-block;
-  margin-top: 30px;
-  text-align: center;
-}
-.img-container {
+.post-container {
   margin: 25px auto;
-  height: 350px;
+  height: 340px;
   width: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
 }
 .post {
   width: 350px;
-  margin: auto;
-  display: block;
-}
-.insta-lay {
-  display: flex;
-  justify-content: space-between;
 }
 
-.insta-btn {
-  background-color: #f7f1eb;
-  padding: 10px 40px;
-  margin-bottom: 25px;
+.h2-insta {
+  margin: auto;
+  font-size: 20px;
+  font-family: "Bodoni Moda", serif;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+  color: #2c2c2c;
+}
+.p-insta {
+  margin: auto;
+  width: 250px;
 }
 
 .followers-bg {
   background-color: #f7f1eb;
   position: absolute;
-  height: 450px;
+  height: 330px;
   width: 100%;
   margin-top: 300px;
-}
-
-.followers {
-  text-align: center;
-  margin: 50px auto;
-}
-.insta-live {
-  display: inline-block;
-  font-size: 24px;
-  border: 1px solid #030201;
-  padding: 20px;
-}
-
-.join {
-  display: inline-block;
-  font-size: 24px;
-  background-color: #d3bfa6;
-  padding: 21px;
-}
-.content-container {
-  width: 1200px;
 }
 
 /* FREEBIES */
@@ -198,10 +193,10 @@ a {
 }
 .free-bg {
   width: 100%;
-  height: 300px;
+  height: 250px;
   position: absolute;
   background-color: #d3bfa6;
-  margin: 70px 0;
+  margin: 125px 0;
 }
 .email {
   display: inline-block;
@@ -210,74 +205,75 @@ a {
   border: 1px solid #8d8d8d;
   padding-left: 10px;
   /* text-align: center; */
-  font-size: 15px
+  font-size: 15px;
 }
 
 .free-btn {
   display: inline-block;
-  height: 54px;
+  height: 50px;
   width: 70px;
   color: #8d8d8d;
   background-color: #f7f1eb;
   border: 1px solid #8d8d8d;
   font-family: "Lora", serif;
- cursor: pointer;
+  cursor: pointer;
 }
 
 .email::placeholder {
   color: #bebebe;
   font-weight: 100;
 }
-.free-title{
+.free-title {
   margin-bottom: 0;
+  font-weight: 100;
+  letter-spacing: 3px;
 }
-.free-p{
+.free-p {
   margin-top: 5px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 /* FOOTER NAVIGATION */
-.nav-bg{
+.nav-bg {
   width: 100%;
-  height: 200px;
+  height: 250px;
   position: absolute;
   background-color: #f7f1eb;
+  margin: -20px 0;
 }
-.navigation{
+.navigation {
   display: inline-block;
   width: 146x;
-  margin-right: 200px;
+  margin-right: 150px;
   text-align: center;
 }
-.socials{
+.socials {
   display: inline-block;
   width: 80px;
   text-align: center;
 }
-.nav-footer{
-  margin-bottom: 90px;
+.nav-footer {
+  margin-top: 190px;
+  margin-bottom: 50px;
   text-align: center;
 }
-.nav-align{
+.nav-align {
   margin-right: 20px;
 }
-.nav-tag{
+.nav-tag {
   margin-right: 10px;
-  
 }
- .nav-text{
+.nav-text {
   display: inline-block;
   text-align: left;
-  
   line-height: 2;
- 
 }
 
 /* FOOTER */
-.footer{
+.footer {
   text-align: center;
   font-size: 12px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 /* 
@@ -297,273 +293,200 @@ a {
 
  */
 
-/* MOBILE VERSION */
-@media only screen and (max-width: 600px){
-  
-  /* HEADER */
-  .brand-name {
-    float: left;
-    padding: 15px;
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
-  .tabs {
-    float: right;
-    padding: 15px;
-  }
-  .container {
-    width: 1400px;
-    margin: auto;
-    position: relative;
-  }
-  .header {
-    height: 50px;
-    background-color: #f7f1eb;
-  }
-  .header-tag {
-    margin-left: 15px;
-  }
-  
-  /* Landing Page */
-  .landing {
-    height: 650px;
-  }
-  
-  .bg-landing {
-    background-color: #f7f1eb;
-    position: absolute;
-    height: 480px;
-    width: 100%;
-    right: 0;
-  }
+@media only screen and (max-width: 1200px) {
+  /* LANDING */
   .landing-img {
-    height: 550px;
-    position: absolute;
-    margin-top: 30px;
-    margin-left: 15px;
-    left: 0;
-    z-index: 1;
+    height: 330px;
+    margin-top: 80px;
+    margin-left: 30px;
   }
-  
   .landing-text {
-    height: 400px;
-    width: 700px;
-    position: absolute;
-    background-color: #f7f1eb;
-    text-align: center;
-    right: 0;
+    margin-top: 90px;
   }
-  
-  .landing-title {
-    font-family: "Pacifico", cursive;
-    font-weight: 200;
-    font-size: 52px;
-    margin: 100px 60px 60px;
+  .bg-landing {
+    height: 250px;
   }
-  
-  .landing-btn {
-    border: 1px solid #d3bfa6;
-    padding: 10px 20px;
-    font-size: 24px;
+  .landing {
+    height: 525px;
   }
-  
+
   /* ABOUT ME */
-  
   .about-me {
-    margin: 59px auto;
-    height: 350px;
-    width: 1000px;
-    background-color: #f7f1eb;
-    text-align: center;
-    padding: 10px;
+    margin: 46px auto;
+    height: 320px;
+    width: 800px;
   }
-  .about-text {
-    margin: 50px;
-    font-size: 26px;
-  }
-  
-  .about-hr {
-    width: 100px;
-  }
-  
+
   .about-border {
     border: 4px solid #f7f1eb;
-    width: 1200px;
-    height: 480px;
+    width: 900px;
     margin: auto;
     margin-bottom: 100px;
-    justify-content: center;
   }
-  
-  /* INSTAGRAM */
-  .insta-hr {
-    width: 100%;
-    display: inline-block;
-    border-top: 2px solid #d3bfa6;
-    margin-right: 10px;
-  }
+
+  /* INSTA */
   .insta-text {
-    display: inline-block;
-    color: #d3bfa6;
+    width: 200px;
   }
   .insta-title {
-    margin-left: 100px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: auto;
+    margin-left: 80px;
+    margin-right: 50px;
   }
-  
-  .insta-card {
-    height: 450px;
-    width: 350px;
-    background-color: #d3bfa6;
-    display: inline-block;
-    margin-top: 30px;
-    text-align: center;
+  .align-row {
+    width: 800px;
   }
-  .img-container {
-    margin: 25px auto;
-    height: 350px;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  .post-container {
+    width: 250px;
+    height: 280px;
   }
   .post {
-    width: 350px;
-    margin: auto;
-    display: block;
+    width: 300px;
   }
-  .insta-lay {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .insta-btn {
-    background-color: #f7f1eb;
-    padding: 10px 40px;
-    margin-bottom: 25px;
-  }
-  
   .followers-bg {
-    background-color: #f7f1eb;
-    position: absolute;
-    height: 450px;
-    width: 100%;
-    margin-top: 300px;
+    height: 260px;
   }
-  
-  .followers {
-    text-align: center;
-    margin: 50px auto;
+}
+
+@media only screen and (max-width: 992px) {
+  /* LANDING */
+  .landing-img {
+    height: 280px;
+    margin-top: 55px;
+    margin-left: 30px;
   }
-  .insta-live {
-    display: inline-block;
-    font-size: 24px;
-    border: 1px solid #030201;
-    padding: 20px;
+  .landing-title {
+    font-size: 38px;
+    margin: 100px 0 60px 60px;
   }
-  
-  .join {
-    display: inline-block;
-    font-size: 24px;
-    background-color: #d3bfa6;
-    padding: 21px;
+  .landing-text {
+    width: 400px;
+    margin-top: 50px;
   }
-  .content-container {
-    width: 1200px;
-  }
-  
-  /* FREEBIES */
-  .free {
-    margin: 170px auto;
-    text-align: center;
-  }
-  .free-bg {
-    width: 100%;
-    height: 300px;
-    position: absolute;
-    background-color: #d3bfa6;
-    margin: 70px 0;
-  }
-  .email {
-    display: inline-block;
-    height: 50px;
-    width: 500px;
-    border: 1px solid #8d8d8d;
-    padding-left: 10px;
-    /* text-align: center; */
-    font-size: 15px
-  }
-  
-  .free-btn {
-    display: inline-block;
-    height: 54px;
-    width: 70px;
-    color: #8d8d8d;
-    background-color: #f7f1eb;
-    border: 1px solid #8d8d8d;
-    font-family: "Lora", serif;
-   cursor: pointer;
-  }
-  
-  .email::placeholder {
-    color: #bebebe;
-    font-weight: 100;
-  }
-  .free-title{
-    margin-bottom: 0;
-  }
-  .free-p{
-    margin-top: 5px;
-    margin-bottom: 50px;
-  }
-  
-  /* FOOTER NAVIGATION */
-  .nav-bg{
-    width: 100%;
+  .bg-landing {
     height: 200px;
-    position: absolute;
-    background-color: #f7f1eb;
   }
-  .navigation{
-    display: inline-block;
-    width: 146x;
-    margin-right: 200px;
-    text-align: center;
+  .landing {
+    height: 400px;
   }
-  .socials{
-    display: inline-block;
-    width: 80px;
-    text-align: center;
+  /* ABOUT ME*/
+  .about-me {
+    margin: 46px auto;
+    height: 370px;
+    width: 600px;
   }
-  .nav-footer{
-    margin-bottom: 90px;
-    text-align: center;
+
+  .about-border {
+    border: 4px solid #f7f1eb;
+    width: 700px;
+    margin: auto;
+    margin-bottom: 100px;
   }
-  .nav-align{
-    margin-right: 20px;
+
+  /* INSTA */
+
+  .insta-title {
+    margin: 0 70px;
   }
-  .nav-tag{
-    margin-right: 10px;
-    
+  .align-row {
+    width: 600px;
   }
-   .nav-text{
-    display: inline-block;
-    text-align: left;
-    
-    line-height: 2;
-   
+  .followers-bg {
+    height: 740px;
   }
-  
-  /* FOOTER */
-  .footer{
-    text-align: center;
-    font-size: 12px;
-    margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* LANDING */
+  .landing-img {
+    height: 150px;
+    margin-top: 70px;
+    margin-left: 30px;
   }
-  
+  .landing-title {
+    font-size: 32px;
+    margin: 100px 0 60px 60px;
+  }
+  .landing-text {
+    width: 400px;
+    margin-top: 10px;
+  }
+  .bg-landing {
+    height: 150px;
+  }
+  .landing {
+    height: 300px;
+  }
+
+  /* ABOUT ME */
+  .about-me {
+    margin: 46px auto;
+    height: 630px;
+    width: 350px;
+  }
+
+  .about-border {
+    border: 4px solid #f7f1eb;
+    width: 450px;
+    margin: auto;
+    margin-bottom: 100px;
+  }
+
+  /* INSTAGRAM */
+  .insta-text {
+    width: 500px;
+  }
+  .insta-title {
+    margin-left: 130px;
+    margin-right: 110px;
+  }
+  .align-row {
+    width: 400px;
+  }
+  .followers-bg {
+    height: 1250px;
+  }
+
+  /* MAILINGLIST */
+  .email {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container {
+    max-width: 500px;
+  }
+  /* NAVBAR */
+  .nav-hr {
+    margin: 10px 5px;
+  }
+  /* LANDING */
+  .landing-img {
+    height: 140px;
+    margin-top: 75px;
+    margin-left: 20px;
+  }
+  .landing-title {
+    font-size: 28px;
+    margin: 100px 0 60px 60px;
+  }
+  .landing-text {
+    width: 400px;
+    margin-top: 15px;
+  }
+  .bg-landing {
+    height: 150px;
+  }
+  .landing {
+    height: 300px;
+  }
+
+  /* INSTAGRAM */
+  .insta-title {
+    margin: 0 110px;
+  }
+
+  /* MAILINGLIST */
+  .email {
+    width: 300px;
+  }
 }
