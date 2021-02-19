@@ -453,14 +453,18 @@ span {
 }
 @media only screen and (max-width: 576px) {
   .content-container {
-    max-width: 500px;
+    max-width: 90%;
   }
   /* NAVBAR */
   .nav-hr {
-    margin: 10px 5px;
+    margin: 12.5px 5px;
+    border-top: 15px solid;
   }
   .nav-link{
     font-size: 13px;
+  }
+  .navbar-brand{
+    font-size: 18px;
   }
   /* LANDING */
   .landing-img {
@@ -487,6 +491,19 @@ span {
   }
 
   /* ABOUT ME */
+  .about-me {
+    height: 300px;
+    width: 90%;
+    
+  }
+  
+  
+  .about-border {
+   
+    width: 90%;
+    
+  }
+  
   .about-text {
     margin: 40px;
     font-size: 15px;
@@ -497,11 +514,21 @@ span {
 
   /* INSTAGRAM */
   .insta-title {
-    margin: 0 110px;
+    margin: 0 auto;
   }
+.insta-text{
+  width: 140px;
+  
+}
+.insta-hr{
+  width: 50%;
+}
 
   /* MAILINGLIST */
   .email {
-    width: 300px;
+    width: 80%;
+  }
+  .navigation{
+    margin-right: 75px;
   }
 }
