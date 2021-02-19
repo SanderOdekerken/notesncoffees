@@ -452,12 +452,15 @@ span {
   }
 }
 @media only screen and (max-width: 576px) {
-  .container {
+  .content-container {
     max-width: 500px;
   }
   /* NAVBAR */
   .nav-hr {
     margin: 10px 5px;
+  }
+  .nav-link{
+    font-size: 13px;
   }
   /* LANDING */
   .landing-img {
@@ -478,6 +481,18 @@ span {
   }
   .landing {
     height: 300px;
+  }
+  .journaling{
+    font-size: 55px;
+  }
+
+  /* ABOUT ME */
+  .about-text {
+    margin: 40px;
+    font-size: 15px;
+  }
+  .about-me {
+    height: 430px;
   }
 
   /* INSTAGRAM */
