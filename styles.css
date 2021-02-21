@@ -453,7 +453,7 @@ span {
 }
 @media only screen and (max-width: 576px) {
   .content-container {
-    max-width: 90%;
+    max-width: 80%;
   }
   /* NAVBAR */
   .nav-hr {
@@ -515,13 +515,17 @@ span {
   /* INSTAGRAM */
   .insta-title {
     margin: 0 auto;
+    width: 70%;
   }
 .insta-text{
-  width: 140px;
+  width: 70%;
   
 }
 .insta-hr{
-  width: 50%;
+  width: 40%;
+}
+.align-row {
+  width: 80%;
 }
 
   /* MAILINGLIST */
