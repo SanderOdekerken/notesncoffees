@@ -529,7 +529,6 @@ span {
   width: 80%;
 }
 .h2-insta{
-  text-align: center;
   font-size: 18px;
 }
 
@@ -539,5 +538,51 @@ span {
   }
   .navigation{
     margin-right: 75px;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+ 
+  /* NAVBAR */
+  
+  /* LANDING */
+  .landing-img {
+    /* visibility: hidden; */
+    margin: 5px 0 0 20px;
+    /* margin-left: 15px; */
+    height: 100px;
+  }
+  .landing-text{
+    margin: auto;
+    right: initial;
+    width: 90%;
+  }
+  .landing-title {
+    font-size: 28px;
+    margin: 100px auto 60px;
+    width: 80%;
+  }
+  .landing-text {
+    /* width: 400px; */
+    margin-top: 15px;
+  }
+  
+
+  /* ABOUT ME */
+
+  
+  
+
+  /* INSTAGRAM */
+  
+  /* MAILINGLIST */
+  
+}
+@media only screen and (max-width: 330px) {
+  .landing-title {
+    font-size: 20px;
+  }
+  .journaling{
+    font-size: 35px;
   }
 }
